@@ -1,0 +1,29 @@
+
+GET http://localhost:5000/api/phones?limit=5&skip=1
+
+
+POST http://localhost:5000/api/phones
+Content-Type: application/json
+
+{
+    "model": "iPhone 15 Pro",
+    "brand": "Apple",
+    "yearProduction": "2026-01-01",
+    "sizeRam": "8GB",
+    "cpu": "A17 Pro",
+    "screenDiagonal": "6.1",
+    "isNfc": true
+}
+
+
+GET http://localhost:5000/api/phones/69f4c6bf5bea36216336ba48
+
+
+PATCH http://localhost:5000/api/phones/69f4c6bf5bea36216336ba48
+Content-Type: application/json
+
+{
+    "isNfc": false
+}
+
+DELETE http://localhost:5000/api/phones/69f4c6bf5bea36216336ba48
